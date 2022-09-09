@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<head>
+	<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:gray;
+    color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+.navbar2 {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.navbar2 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    font-size:12px;
+
+}
+
+/* Change color on hover */
+.navbar2 a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar2 a.active {
+    background-color:gray;
+    color: white;
+}
+
+
+
+
+
+.navbar3 {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.navbar3 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    font-size:8px;
+
+}
+
+/* Change color on hover */
+.navbar3 a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar3 a.active {
+    background-color:gray;
+    color: white;
+}
+
+
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 25%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 75%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  text-align:justify;
+   text-justify: inter-word;
+}
+.hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+/* Fake image */
+.iframe {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  float:left;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  font-size:15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  text-color:black;
+}
+	/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 80%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+    .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+  .banner, .banner h3 {
+
+  }
+}
+
+.logo {
+    font-size:30px;
+	font-weight:bold;
+	font-family: 'Josefin Sans', sans-serif;
+	color: black;
+	letter-spacing:10px;
+	
+	text-align:right;
+	
+	}
+.noHover{
+    pointer-events: none;
+}
+.position {
+float:right;
+}
+
+.card a {
+text-decoration:none;
+		}
+
+.card a:link {
+  color: grey;
+}
+
+.card a:visited {
+  color: black;
+}
+
+.card a:hover {
+  color: grey;
+}
+
+
+.card a:active {
+  color: black;
+}
+</style>
+</head>
+<body>
+		
+<div class="topnav" id="myTopnav">
+  <a href="#logo" class=" noHover logo">ALBATROS</a>
+  <a href="index.html">ACASĂ</a>
+  <a href="muzicastraina.html" class="active">MUZICĂ</a>
+  <a href="stirialbume.html">ȘTIRI</a>
+  <a href="programluni.html">PROGRAM</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+<nav class="navbar2 navbar-expand-lg navbar-light bg-light">
+  <span class="navbar-toggler-icon"></span>
+  <div class="collapse navbar-collapse" id="navbarNav">
+  <a class="nav-link" href="muzicaromaneasca.html">ÎNAPOI</a>
+        <a class="nav-link active" href="info1noi.html">Informații Jason Derulo</a>
+		
+  </div>
+</nav>
+
+
+<div class="row">
+  <div class="leftcolumn">
+   
+    <div class="card">
+     
+      <a><img width=100%; alt="news thumbnail" src="./images/logoderuloo.jpg" ></a>
+	  
+   
+	<h4>Date generale</h4>
+<p>OOrigine | Miami, Florida, SUA (21 septembrie 1989)<br>
+Gen muzical | R&B, hip hop, pop<br>
+Ani de activitate | 2007–present
+</p>
+
+
+    </div>
+
+  </div>
+  
+  <div class="rightcolumn">
+   <div class="card">
+      <h2>Jason Derulo</h2>
+	  <hr>
+	  <p>
+Derulo s-a născut în Miami, Florida din părinți haitieni. Numele lui la naștere a fost Desrouleaux, dar i-a schimbat ortografia pentru a fi mai ușor de pronunțat.[8]
+<br><br>
+Derulo cântă de la vârsta de cinci ani și a scris primul lui cântec, „Crush on You”, la opt ani. Derulo și-a petrecut tinerețea studiind operă, teatru și balet. A studiat la Dillard Center for the Arts din Fort Lauderdale, Florida și a absolvit American Musical and Dramatic Academy din New York.
+<br><br>
+La 12 ani l-a întâlnit pe viitorul său manager, Frank Harris, un student la facultatea de drept care îl ajuta să își îmbunătățească abilitățile la baschet.[9]
+<br><br>
+Derulo a scris piese pentru artiști precum Diddy, Danity Kane, Donnie Klang, Sean Kingston, Cassie și Lil Mama de la 16 ani, a dorit să devină cântăreț solo.[10] După ce a mers la școli de arte interpretative și și-a finisat talentul de dansator și cântăreț (plus că a jucat în producțiile de teatru Ragtime și Smokey Joe's Cafe)[11], Derulo a câștigat marele premiu al emisiunii TV Showtime at the Apollo. Derulo a fost descoperit de producătorul de muzică J. R. Rotem, care a semnat cu casa lui de discuri Beluga Heights Records și Warner Bros. Records.
+<br><br>
+
+Cariera muzicală a lui Derulo a început în 2007 când a cântat pe melodia lui Birdman, "Bossy", care a apărut pe albumul lui, 5 * Stunna.
+<br><br>
+Pe 4 august 2009, Jason, și-a lansat melodia de debut „Whatcha Say”. A fost produsă de J. R. Rotem cu participarea lui Fuego. La finalul lui august 2009, cântecul a intrat în Billboard Hot 100 pe locul 54.[12] și a ajuns pe locul 1 în noiembrie 2009.[13] Videoclipul melodiei a apărut în septembrie 2009; după ce melodia a devenit un succes, Derulo a început munca la abumul său de debut. A lansat al doilea single de pe album "In My Head" , pe 8 decembrie 2009. A intrat pe locul 63 în Billboard Hot 100 și ajuns pe 9 până acum. În România hit-urile lui au ajuns abia în 2013 și au răsunat la radiouri , pe posturile TV și a întrecut mulți artiști, cum ar fi:Delia,Amna,Smiley,Connect-r,Andra etc. Prima sa melodie de succes a fost 'Stupid love'.
+<br><br>
+Iar în 2020 are succes cu cântecul ,,Savage love".</p>
+   </div>
+  
+
+  </div>
+</div>
+
+<nav class="footer">
+    <a href="dj.html">DJ</a>
+    <a href="radio.html">Radio</a>
+	<a href="info1noi.html">Top</a>
+</nav>
+
+
+</body>
+</html>

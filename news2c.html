@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<head>
+	<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:gray;
+    color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+
+.hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+/* Fake image */
+.iframe {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  float:left;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  text-color:black;
+}
+
+/* Responsive layout - when the screen is less than 1200px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 922px) {
+  .leftcolumn, .rightcolumn {   
+    width: 80%;
+    padding: 0;
+  }
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 749px) {
+  .leftcolumn, .rightcolumn {   
+    width: 80%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+    .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+  .banner, .banner h3 {
+
+  }
+}
+
+.position {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.navbar2 {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar2 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:12px;
+}
+
+.navbar2 a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar2 a.active {
+    background-color:gray;
+    color: white;
+}
+
+</style>
+</head>
+<body>
+  		
+<div class="topnav" id="myTopnav">
+  <a href="#logo" class=" noHover logo">ALBATROS</a>
+  <a href="index.html" >ACASĂ</a>
+  <a href="muzicastraina.html">MUZICĂ</a>
+  <a href="stirialbume.html" class='active'>ȘTIRI</a>
+  <a href="programluni.html">PROGRAM</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<nav class="navbar2 navbar-expand-lg navbar-light bg-light">
+        <span class="navbar-toggler-icon"></span>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <a class="nav-link" href="stirialbume.html">ALBUME</a>
+                <a class="nav-link active" href="stiricelebritati.html">CELEBRITAȚI</a>
+				  <a class="nav-link" href="stiricelebritati.html">INAPOI</a>
+            </div>
+    </nav>
+	
+
+<div class="row">
+    <div class="leftcolumn">
+        <div class="card">
+		<h1> Grammys </h1>
+        <img width="600" height="340" alt="news thumbnail" src="./images/grammiesart.jpg" class="position">
+	    <hr>
+            <h1>Săptămâna aceasta au fost anunțate nominalizările la premiile Grammy 2021. Beyonce a primit cele mai multe nominalizări, nouă la număr, deși nu a lansat niciun album de studio în 2020. Queen B a scos însă pe piață track-ul Black Parade și albumul vizual Black Is King. În plus, a avut o colaborare cu Megan Thee Stallion.
+Taylor Swift, Roddy Ricch și Dua Lipa au primit fiecare câte șase nominalizări. Taylor concurează inclusiv la Albumul anului și Cântecul anului..<br><br>      
+Kanye West a intrat și el în cursa pentru Grammy, cu două nominalizări pentru materialul gospel „Jesus Is King”.<br><br>
+Megan Thee Stallion și Dua Lipa au aflat live, de la TV, că au fost nominalizate pentru prima oară.<br><br>
+Bad Bunny, Camilo, Kany Garcia, Ricky Martin și Debi Nova vor lupta în categoria Best Latin Pop/Urban Album.<br><br>
+Noua senzație a muzicii rap Megan Thee Stallion a fost nominalizată inclusiv la Record Of The Year și Best New Artist.<br><br>
+Fiona Apple și Phoebe Bridgers conduc la categoriile Rock/Alternative, iar Miranda Lambert,la Best Country Album.<br><br>
+Justin Bieber a obținut patru nominalizări, două dintre ele la categoriile pop.A 63-a ediție a Grammy Awards va avea loc în 31 ianuarie 2021, la Staples Center, LA.Gazda The Daily Show, Trevor Noah, va prezenta ceremonia.
+		    </h1>
+	
+    </div>
+	
+  </div>
+  </div>
+
+</div>
+<nav class="footer">
+    <a href="dj.html">DJ</a>
+    <a href="radio.html">Radio</a>
+	<a href="news2c.html">Top</a>
+</nav>
+
+</body>
+</html>
+
+

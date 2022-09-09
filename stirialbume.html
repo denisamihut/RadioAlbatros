@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<head>
+	<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:gray;
+    color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.navbar2 {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar2 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:12px;
+}
+
+.navbar2 a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar2 a.active {
+    background-color:gray;
+    color: white;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 33%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 33%;
+  background-color: #f1f1f1;
+  
+}
+.middlecolumn {
+  float: left;
+  width: 33%;
+  background-color: #f1f1f1;
+
+}
+.hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  text-color:black;
+}
+/* Responsive layout - when the screen is less than 1200px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+/* Responsive layout - when the screen is less than 1200px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 922px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .leftcolumn, .rightcolumn {   
+    width: 80%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+    .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+  .banner, .banner h3 {
+
+  }
+}
+
+
+a {
+text-decoration:none;
+}
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: grey;
+}
+
+/* selected link */
+a:active {
+  color: grey;
+}
+    .logo {
+    font-size:30px;
+	font-weight:bold;
+	font-family: 'Josefin Sans', sans-serif;
+	color: black;
+	letter-spacing:10px;
+	
+	text-align:right;
+	
+	}
+.noHover{
+    pointer-events: none;
+}     
+.text h3{
+background-color:white;
+}  
+
+		.card a {
+text-decoration:none;
+		}
+
+.card a:link {
+  color: black;
+}
+
+.card a:visited {
+  color: black;
+}
+
+.card a:hover {
+  color: black;
+}
+
+
+.card a:active {
+  color: grey;
+}
+
+
+		
+		.footer a {
+		text-decoration:none;
+		}
+
+		.footer a:link {
+		  color: black;
+		}
+
+		.footer a:visited {
+		  color: black;
+		}
+
+		.footer a:hover {
+		  color: grey;
+		}
+
+
+		.footer a:active {
+		  color: blue;
+		}
+		
+</style>
+</head>
+<body>
+
+		
+<div class="topnav" id="myTopnav">
+  <a href="#logo" class=" noHover logo">ALBATROS</a>
+  <a href="index.html" >ACASĂ</a>
+  <a href="muzicastraina.html">MUZICĂ</a>
+  <a href="stirialbume.html" class="active">ȘTIRI</a>
+  <a href="programluni.html">Program</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<nav class="navbar2 navbar-expand-lg navbar-light bg-light">
+  <span class="navbar-toggler-icon"></span>
+  <div class="collapse navbar-collapse" id="navbarNav">
+        <a class="nav-link active" href="stirialbume.html">ALBUME</a>
+        <a class="nav-link" href="stiricelebritati.html">CELEBRITAȚI</a>
+      
+      
+  </div>
+</nav>
+
+
+<div class="row">
+    <div class="leftcolumn">
+	
+        <div class="card">
+			    <div id="container">
+                    <a href="news1a.html"><img style="display: inline;" width=100%;  src="./images/logo2weeknd.jpg"  /></a>
+                    <h5><a href="news1a.html">The Weeknd lanseaza al patrulea material discografic din cariera – After Hours – album care include hiturile „Blinding Lights”, „Heartless” sau track-ul lansat recent „After hours”.</a></h5>
+                </div>
+		    <hr> 
+			    <div id="container">
+                    <a href="news2a.html"> <img style="display: inline;" width=100%;  src="./images/logo2inna.jpg"  /></a>
+                    <h5><a href="news2a.html"> Inna a petrecut 3 săptămâni alături de echipa ei în Dance Queen’s House, timp în care a înregistrat noul album, „Heartbreaker”. Materialul conține 10 piese în limba engleză și este disponibil pe Youtube.</a></h5>
+                </div>	 
+		    <hr>
+                <div id="container">
+                    <a href="news3a.html"><img style="display: inline;"width=100%;  src="./images/logojackson.jpg"  /></a>
+                   <h5><a href="news3a.html">Paris Jackson a lansat single-ul „Let Down”, primul de pe albumul de debut „Wilted”.<br>&nbsp;<br>&nbsp;</a></h5>
+                </div>
+		    <hr>
+                <div id="container">
+                   <a href="news4a.html"><img style="display: inline;" width=100%;   src="./images/logoswift.jpg"  /></a>
+                   <h5><a href="news4a.html">Albumul Folklore, semnat Taylor Swift, a devenit primul album vândut în peste 1 milion de copii, în 2020, în Statele Unite</a></h5>
+                </div>
+	
+	    </div> 
+    </div>	
+
+	     
+       <div class="middlecolumn">
+          <div class="card">
+			    <div id="container">
+                    <a href="news5a.html"><img style="display: inline;" width=100%; src="./images/smithart.jpg"  /></a>
+                    <h5><a href="news5a.html">Sam Smith a lansat albumul „Love Goes”.<br>&nbsp;<br>&nbsp; </a></h5>
+                </div>
+		    <hr> 
+			    <div id="container">
+                    <a href="news6a.html"> <img style="display: inline;" width=100%;   src="./images/swiftart.jpg"  /></a>
+                    <h5><a href="news6a.html"> Taylor Swift a lansat albumul "Evermore", un nou LP "născut" în pandemie.<br>&nbsp;<br>&nbsp;</a></h5>
+                </div>	 
+		    <hr>
+                <div id="container">
+                    <a href="news7a.html"><img style="display: inline;" width=100%;  src="./images/acdcart.jpg"  /></a>
+                   <h5><a href="news7a.html">Albumul AC/DC "Power Up" ajunge pe locul întâi în topul Billboard 200.<br>&nbsp;<br>&nbsp;</a></h5>
+                </div>
+		    <hr>
+                <div id="container">
+                   <a href="news8a.html"><img style="display: inline;" width=100%;   src="./images/cyrusart.jpg"  /></a>
+                   <h5><a href="news8a.html">Miley Cyrus a lansat un nou album, "Plastic Hearts", cu un spirit rock puternic.<br>&nbsp;<br>&nbsp;</a></h5>
+                </div>
+	
+	    </div> 
+  </div>
+  
+  
+   <div class="rightcolumn">
+        <div class="card">
+			    <div id="container">
+                    <a href="news9a.html"><img style="display: inline;" width=100%; src="./images/gouldingarat.jpg"  /></a>
+                    <h5><a href="news9a.html">Ellie Goulding lansează EP-ul "Songbook for Christmas".<br>&nbsp;<br>&nbsp;</a></h5>
+                </div>
+		    <hr> 
+			    <div id="container">
+                    <a href="news10a.html"> <img style="display: inline;"width=100%;   src="./images/bocelliart.jpg"  /></a>
+                    <h5><a href="news10a.html">Andrea Bocelli lansează albumul "Believe" și anunță concertul online "Believe in Christmas"<br>&nbsp; </a></h5>
+                </div>	 
+		    <hr>
+                <div id="container">
+                    <a href="news11a.html"><img style="display: inline;"width=100%;  src="./images/arianaart.jpg"  /></a>
+                   <h5><a href="news11a.html">Ariana Grande a lansat albumul "Positions", ce include colaborări cu The Weeknd și Doja Cat.<br>&nbsp; <br>&nbsp;</a></h5>
+                </div>
+		    <hr>
+                <div id="container">
+                   <a href="news12a.html"><img style="display: inline;" width=100%;  src="./images/drakeart.jpg"  /></a>
+                   <h5><a href="news12a.html">Drake anunţă data de lansare a noului album, "Certified Lover Boy"<br>&nbsp;</a></h5>
+                </div>
+	
+	    </div> 
+  </div>
+  
+  
+</div>
+
+<nav class="footer">
+    <a href="dj.html">DJ</a>
+    <a href="radio.html">Radio</a>
+	<a href="stirialbume.html">Top</a>
+</nav>
+
+</body>
+</html>

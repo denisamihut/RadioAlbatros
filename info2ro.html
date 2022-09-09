@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<head>
+	<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+   background-color:gray;
+    color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.navbar2 {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.navbar2 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    font-size:12px;
+
+}
+
+/* Change color on hover */
+.navbar2 a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar2 a.active {
+    background-color:gray;
+    color: white;
+}
+
+
+
+
+
+.navbar3 {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.navbar3 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    font-size:8px;
+
+}
+
+/* Change color on hover */
+.navbar3 a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar3 a.active {
+    background-color:gray;
+    color: white;
+}
+
+
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 25%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 75%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  text-align:justify;
+   text-justify: inter-word;
+}
+.hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+/* Fake image */
+.iframe {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  float:left;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  font-size:15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  text-color:black;
+}
+
+	/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 80%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+    .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+  .banner, .banner h3 {
+
+  }
+}
+
+.logo {
+    font-size:30px;
+	font-weight:bold;
+	font-family: 'Josefin Sans', sans-serif;
+	color: black;
+	letter-spacing:10px;
+	
+	text-align:right;
+	
+	}
+.noHover{
+    pointer-events: none;
+}
+.position {
+float:right;
+}
+
+.card a {
+text-decoration:none;
+		}
+
+.card a:link {
+  color: grey;
+}
+
+.card a:visited {
+  color: black;
+}
+
+.card a:hover {
+  color: grey;
+}
+
+
+.card a:active {
+  color: black;
+}
+.footer a {
+		text-decoration:none;
+		}
+
+		.footer a:link {
+		  color: black;
+		}
+
+		.footer a:visited {
+		  color: black;
+		}
+
+		.footer a:hover {
+		  color: grey;
+		}
+
+
+		.footer a:active {
+		  color: blue;
+		}
+</style>
+</head>
+<body>
+
+		
+<div class="topnav" id="myTopnav">
+  <a href="#logo" class=" noHover logo">ALBATROS</a>
+  <a href="index.html" >ACASĂ</a>
+  <a href="muzicastraina.html" class="active">MUZICĂ</a>
+  <a href="stirialbume.html">ȘTIRI</a>
+  <a href="programluni.html">PROGRAM</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+		<nav class="navbar2 navbar-expand-lg navbar-light bg-light">
+		  <span class="navbar-toggler-icon"></span>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+				<a class="nav-link " href="muzicastraina.html" >STRAINĂ</a>
+				<a class="nav-link  active" href="muzicaromaneasca.html">ROMANEASCĂ</a>
+				<a class="nav-link" href="muzicanoua.html">NOUĂ</a>
+					<a class="nav-link " href="muzicaromaneasca.html">ÎNAPOI</a>
+			   
+		  </div>
+		</nav>
+
+
+<div class="row">
+  <div class="leftcolumn">
+   
+    <div class="card">
+     
+      <a><img width=100%; alt="news thumbnail" src="./images/logobambii.jpg" ></a>
+	  
+   
+	<h4>Date generale</h4>
+<p>Origine | București, România<br>
+Gen muzical | pop<br>
+Ani de activitate | 1998 - prezent<br>
+Membri<br>
+Raluca Tănase<br>
+Denisa Tănase
+</p>
+
+
+    </div>
+
+  </div>
+  
+  <div class="rightcolumn">
+   <div class="card">
+      <h2>Bambi</h2>
+	  <hr>
+	  <p> Bambi este o formație de muzică pop din România, formată din surorile Raluca Tănase (n.2 ianuarie 1985, București) și Denisa Tănase (n.13 octombrie 1987, București). S-au reunit in 2011.
+	  <br><br>
+Încă din copilărie, Raluca și Denisa au dovedit o foarte mare pasiune pentru muzică. Și-au început cariera la "Palatului Copiilor" din București. Au urmat apariții TV la emisiunile “Ba da, ba nu”, “Feriți-vă de măgăruș” și “Abracadabra”. Și-au continuat studiile la Liceul de Muzică "George Enescu" din București, iar apoi la Universitatea Națională de Muzică București.
+	  <br><br>
+
+În anul 1999, trupa Bambi s-a remarcat la emisiunea "Trupa de șoc" de la TVR, unde a câștigat foarte multe voturi din partea telespectatorilor. Ulterior, a încheiat un contract de reprezentanță și management cu '''Fundația Culturală "Phoenix"'''.
+	  <br><br>
+
+În august 2000, Bambi a lansat primul videoclip, "Doi ochi căprui"[1], difuzat în premieră la Festivalul "Callatis" din Mangalia. Tot în august 2000, a lansat primul album, intitulat "Bilețele de dragoste", conținând și piesa "Doi ochi căprui". Această piesă a devenit imediat un hit al tuturor generațiilor, fiind difuzată pe toate posturile de radio și televiziune. Albumul s-a vândut în decurs de 8 luni în peste 100.000 de exemplare.
+	  <br><br>
+
+De atunci și până acum, trupa a continuat să aibă același succes, fiind invitată la toate evenimentele muzicale din țară și din Diaspora.
+	  <br><br>
+
+În 2011, trupa Bambi a câștigat Discul de Aur în pentru cel mai recent album, “Îmi cânt iubirea”.
+	  <br><br>
+
+În 2015, trupa Bambi s-a destrămat, iar Raluca și Denisa și-au început cariere solo, dar cele două au declarat într-un interviu că proiectul Bambi nu va dispărea.
+	  <br><br>
+
+Discografie
+<hr>
+"Bilețele de dragoste", 2000<br>
+"Albumul nou", 2001<br>
+"Mai sunt trei zile", 2003<br>
+"Spre fericire", 2006<br>
+"Îmi cânt iubirea", 2011</p>
+   </div>
+  
+
+  </div>
+</div>
+
+<nav class="footer">
+    <a href="dj.html">DJ</a>
+    <a href="radio.html">Radio</a>
+	<a href="info2ro.html">Top</a>
+</nav>
+
+
+</body>
+</html>

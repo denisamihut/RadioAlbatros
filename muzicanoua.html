@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial;
+			padding: 10px;
+			background: #f1f1f1;
+		}
+
+
+
+		.nav {
+			overflow: hidden;
+			background-color: rgb(59, 142, 209);
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+		}
+
+		.nav a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 14px;
+		}
+
+		.nav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		.tnav a.active {
+			background-color: gray;
+			color: white;
+		}
+
+
+
+
+		/* .navbar2 {
+		  overflow: hidden;
+		  background-color: #333;
+		}
+
+		
+		.navbar2 a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size:15px;
+		}
+
+		
+		.navbar2 a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+
+		.navbar2 a.active {
+			background-color:gray;
+			color: white;
+		} */
+
+		.leftcolumn,
+		.rightcolumn {
+			width: 100%;
+			padding: 0;
+		}
+
+		.leftcolumn {
+			float: left;
+			width: 75%;
+			padding-left: 2px;
+		}
+
+		.rightcolumn {
+			float: left;
+			width: 25%;
+			background-color: #f1f1f1;
+			padding-left: 20px;
+		}
+
+		/* Fake image */
+		figure {
+			display: inline-block;
+			margin-left: 0;
+			margin-right: 0;
+			padding-left: 10px;
+			padding-right: 10px;
+			margin-top: 2px;
+			margin-bottom: 2px;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* Footer */
+		.footer {
+			padding: 20px;
+			text-align: center;
+			background: #ddd;
+			margin-top: 20px;
+			text-color: black;
+		}
+
+
+
+		
+
+
+		/* Add a card effect for articles */
+		.card {
+			background-color: white;
+			padding: 5px;
+			margin-top: 20px;
+		}
+
+
+		.card a {
+			text-decoration: none;
+		}
+
+		.card a:link {
+			color: grey;
+		}
+
+		.card a:visited {
+			color: grey;
+		}
+
+		.card a:hover {
+			color: black;
+		}
+
+
+		.card a:active {
+			color: grey;
+		}
+	</style>
+</head>
+
+<body>
+
+
+
+	<header>
+
+		<div class="nav">
+			<a class="navbar-brand" href="/">
+				<div class="logo-image">
+					<img src="./PV1/logo.png" class="img-fluid">
+				</div>
+			</a>
+			<a href="#" class="active">HOME</a>
+			<a href="#">JOBS</a>
+			<a href="#">ADD EMPLOYER</a>
+			<a href="#">ABOUT US</a>
+			<a href="#">CONTACT</a>
+			<a href="#">SIGN IN <i class="fas fa-user-circle"></i></a>
+		</div>
+
+	</header>
+
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="card">
+				<h3>PLAYLIST</h3>
+				<figure>
+					<iframe class="info" width="300" height="145" src="https://www.youtube.com/embed/sQR2-Q-k_9Y"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+					<figcaption class="info">Jason Derulo <br> Savage Love<br> <a href="info1noi.html">Informatii</a>
+					</figcaption>
+				</figure>
+
+
+
+			</div>
+		</div>
+
+		<div class="rightcolumn">
+			<section class="right">
+				<div class="card">
+					<img src="./FE HTML&CSS/images/job.png" alt="Avatar" style="width:100%">
+					<div class="container">
+						<h4><b>Arhitect</b></h4>
+						<p>The Metropolitan Museum of Art</p>
+						<a href="#" class="btn btn-primary">See details ></a>
+					</div>
+				</div>
+				<div class="card">
+					<img src="./FE HTML&CSS/images/job2.png" alt="Avatar" style="width:100%">
+					<div class="container">
+						<h4><b>Arhitect</b></h4>
+						<p>The Metropolitan Museum of Art</p>
+						<a href="#" class="btn btn-primary">See details ></a>
+					</div>
+				</div>
+				<div class="card">
+					<img src="./FE HTML&CSS/images/job3.png" alt="Avatar" style="width:100%">
+					<div class="container">
+						<h4><b>Arhitect</b></h4>
+						<p>The Metropolitan Museum of Art</p>
+						<a href="#" class="btn btn-primary">See details ></a>
+					</div>
+				</div>
+				<div class="card">
+					<img src="./FE HTML&CSS/images/insurance-job.png" alt="Avatar" style="width:100%">
+					<div class="container">
+						<h4><b>Arhitect</b></h4>
+						<p>The Metropolitan Museum of Art</p>
+						<a href="#" class="btn btn-primary">See details ></a>
+					</div>
+				</div>
+				<div class="card">
+					<img src="./FE HTML&CSS/images/tester-job.png" alt="Avatar" style="width:100%">
+					<div class="container">
+						<h4><b>Arhitect</b></h4>
+						<p>The Metropolitan Museum of Art</p>
+						<a href="#" class="btn btn-primary">See details ></a>
+					</div>
+				</div>
+		</div>
+	</div>
+	</div>
+	<nav class="footer">
+		<a href="dj.html">DJ</a>
+		<a href="radio.html">Radio</a>
+		<a href="muzicanoua.html">Top</a>
+	</nav>
+
+</body>
+
+</html>
